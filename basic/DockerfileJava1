@@ -1,0 +1,9 @@
+FROM openjdk:11
+
+WORKDIR /app
+
+COPY helloWorld1.java /app
+
+RUN javac helloWorld1.java
+
+CMD [ "java", "helloWorld1" ]
